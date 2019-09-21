@@ -1,3 +1,6 @@
+
+#make sure that the training and test data is of same size or pixels as in my case  Each digit is 20*20
+
 import cv2
 import numpy as np
 # training data to our algorithm
@@ -12,7 +15,7 @@ for d in test_digits:
     d= d.flatten()
     test_cells.append(d)
 
-#coverting test data int np array coz knn works on np arrays not normal arrays
+#converting test data int np array coz knn works on np arrays not normal arrays
 test_cells = np.array(test_cells,dtype =np.float32)
 
 
